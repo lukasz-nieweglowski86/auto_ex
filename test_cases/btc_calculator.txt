@@ -1,0 +1,339 @@
+Test: test_enter_btc_negative_value
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter BTC value. -> USD value is calculated.
+
+ASSERTIONS:
+1. Check if USD value is calculated correctly.
+
+=========================================================================================
+
+Test: test_enter_btc_value_0
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter BTC value. -> USD value is calculated.
+
+ASSERTIONS:
+1. Check if USD value is equal to 0.
+
+=========================================================================================
+
+Test: test_enter_btc_value_letters
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter BTC value. -> USD value is not calculated.
+
+ASSERTIONS:
+1. Check if BTC value is equal to 1.
+2. Check if USD value is equal to 64639.
+
+=========================================================================================
+
+Test: test_enter_btc_value_space_bar
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter BTC value. -> USD value is not calculated.
+
+ASSERTIONS:
+1. Check if BTC value is equal to 1.
+2. Check if USD value is equal to 64639.
+
+=========================================================================================
+
+Test: test_enter_btc_value_empty
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Clear BTC value input. -> USD value is not calculated.
+
+ASSERTIONS:
+1. Check if BTC value is equal to 1.
+2. Check if USD value is equal to 64639.
+
+=========================================================================================
+
+Test: test_enter_btc_positive_value_7_decimal_places
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter BTC value. -> USD value is calculated.
+
+ASSERTIONS:
+1. Check if USD value is calculated correctly.
+
+=========================================================================================
+
+Test: test_enter_btc_positive_value_8_decimal_places
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter BTC value. -> USD value is calculated.
+
+ASSERTIONS:
+1. Check if USD value is calculated correctly.
+
+=========================================================================================
+
+Test: test_enter_btc_positive_value_9_decimal_places
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter BTC value. -> USD value is calculated.
+
+ASSERTIONS:
+1. Check if USD value is calculated correctly.
+
+=========================================================================================
+
+Test: test_change_btc_value_step_up
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Click the increment button once. -> BTC value is increased, USD value is calculated.
+
+ASSERTIONS:
+1. Check if displayed BTC value has increased by one-step value.
+2. Check if USD value is calculated correctly.
+
+=========================================================================================
+
+Test: test_change_btc_value_step_down
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Click the decrement button once. -> BTC value is decreased, USD value is calculated.
+
+ASSERTIONS:
+1. Check if displayed BTC value has decreased by one-step value.
+2. Check if USD value is calculated correctly.
+
+=========================================================================================
+
+Test: test_change_btc_value_step_down_below_0
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 0.
+3. USD value is equal to 0.
+
+STEPS:
+1. Click the decrement button once. -> BTC value is decreased, USD value is calculated.
+
+ASSERTIONS:
+1. Check if displayed BTC value has decreased by one-step value.
+2. Check if USD value is calculated correctly.
+
+=========================================================================================
+=========================================================================================
+Test: test_enter_usd_negative_value
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter USD value. -> BTC value is calculated.
+
+ASSERTIONS:
+1. Check if BTC value is calculated correctly.
+
+=========================================================================================
+
+Test: test_enter_usd_value_0
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter USD value. -> BTC value is calculated.
+
+ASSERTIONS:
+1. Check if BTC value is equal to 0.
+
+=========================================================================================
+
+Test: test_enter_usd_value_letters
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter USD value. -> BTC value is not calculated.
+
+ASSERTIONS:
+1. Check if USD value is equal to 64639.
+2. Check if BTC value is equal to 1.
+
+=========================================================================================
+
+Test: test_enter_usd_value_space_bar
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter USD value. -> BTC value is not calculated.
+
+ASSERTIONS:
+1. Check if USD value is equal to 64639.
+2. Check if BTC value is equal to 1.
+
+=========================================================================================
+
+Test: test_enter_usd_value_empty
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Clear USD value input. -> BTC value is not calculated.
+
+ASSERTIONS:
+1. Check if USD value is equal to 64639.
+2. Check if BTC value is equal to 1.
+
+=========================================================================================
+
+Test: test_enter_usd_positive_value_1_decimal_place
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter USD value. -> BTC value is calculated.
+
+ASSERTIONS:
+1. Check if BTC value is calculated correctly.
+
+=========================================================================================
+
+Test: test_enter_usd_positive_value_2_decimal_places
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter USD value. -> BTC value is calculated.
+
+ASSERTIONS:
+1. Check if BTC value is calculated correctly.
+
+=========================================================================================
+
+Test: test_enter_usd_positive_value_3_decimal_places
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Enter USD value. -> BTC value is calculated.
+
+ASSERTIONS:
+1. Check if BTC value is calculated correctly.
+
+=========================================================================================
+
+Test: test_change_usd_value_step_up
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Click the increment button once. -> USD value is increased, BTC value is calculated.
+
+ASSERTIONS:
+1. Check if displayed USD value has increased by one-step value.
+2. Check if BTC value is calculated correctly.
+
+=========================================================================================
+
+Test: test_change_usd_value_step_down
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 1.
+3. USD value is equal to 64639.
+
+STEPS:
+1. Click the decrement button once. -> USD value is decreased, BTC value is calculated.
+
+ASSERTIONS:
+1. Check if displayed USD value has decreased by one-step value.
+2. Check if BTC value is calculated correctly.
+
+=========================================================================================
+
+Test: test_change_usd_value_step_down_below_0
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. BTC value is equal to 0.
+3. USD value is equal to 0.
+
+STEPS:
+1. Click the decrement button once. -> USD value is decreased, BTC value is calculated.
+
+ASSERTIONS:
+1. Check if displayed USD value has decreased by one-step value.
+2. Check if BTC value is calculated correctly.

@@ -1,0 +1,58 @@
+Test: test_click_game_tile
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. At least one game is displayed at carousel.
+3. User is not logged in.
+
+STEPS:
+1. Click the game tile. -> Login modal is displayed.
+
+ASSERTIONS:
+1. Check if 'Please login first' text is visible.
+
+=========================================================================================
+
+Test: test_close_login_modal
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. At least one game is displayed at carousel.
+3. User is not logged in.
+4. Login modal is displayed.
+
+STEPS:
+1. Click the 'X' button. -> Login modal is closed.
+
+ASSERTIONS:
+1. Check if 'Please login first' text is not visible.
+
+=========================================================================================
+
+Test: test_navigate_right_on_carousel
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. At least six games are available at carousel.
+3. At least one game is not visible on the right side of carousel.
+
+STEPS:
+1. Click the right navigation button. -> Game that was first on the left earlier is not visible anymore.
+
+ASSERTIONS:
+1. Check if game that was first on the left earlier is not visible anymore.
+
+=========================================================================================
+
+Test: test_navigate_left_on_carousel
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+2. At least six games are available at carousel.
+3. At least one game is not visible on the left side of carousel.
+
+STEPS:
+1. Click the left navigation button. -> Game that was first on the right earlier is not visible anymore.
+
+ASSERTIONS:
+1. Check if game that was first on the right earlier is not visible anymore.

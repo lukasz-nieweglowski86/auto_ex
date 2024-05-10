@@ -1,0 +1,25 @@
+Test: test_switch_between_homepage_to_casino_page
+
+PRECONDITIONS:
+1. Homepage is displayed.
+
+STEPS:
+1. Click the 'Casino' button. -> 'Casino' page is displayed.
+
+ASSERTIONS:
+1. Check if current URL matches 'Casino' page URL.
+2. Check if 'New games' text is displayed.
+
+=========================================================================================
+
+Test: test_switch_between_casino_page_to_homepage
+
+PRECONDITIONS:
+1. 'Casino' page is displayed.
+
+STEPS:
+1. Click the 'Home' button. -> 'Home' page is displayed.
+
+ASSERTIONS:
+1. Check if current URL matches 'Home' page URL.
+2. Check if 'Something...' text is displayed.
