@@ -39,7 +39,7 @@ STEPS:
 1. Enter BTC value. -> USD value is not calculated.
 
 ASSERTIONS:
-1. Check if BTC value is equal to 1.
+1. Check if BTC value is equal to 'NaN'.
 2. Check if USD value is equal to 64639.
 
 =========================================================================================
@@ -55,7 +55,7 @@ STEPS:
 1. Enter BTC value. -> USD value is not calculated.
 
 ASSERTIONS:
-1. Check if BTC value is equal to 1.
+1. Check if BTC value is equal to 'NaN'.
 2. Check if USD value is equal to 64639.
 
 =========================================================================================
@@ -68,10 +68,10 @@ PRECONDITIONS:
 3. USD value is equal to 64639.
 
 STEPS:
-1. Clear BTC value input. -> USD value is not calculated.
+1. Enter BTC value. -> USD value is not calculated.
 
 ASSERTIONS:
-1. Check if BTC value is equal to 1.
+1. Check if BTC value is equal to 'NaN'.
 2. Check if USD value is equal to 64639.
 
 =========================================================================================

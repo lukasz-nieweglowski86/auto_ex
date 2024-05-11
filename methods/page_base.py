@@ -30,3 +30,8 @@ class PageBase:
     def wait_for_text_to_be_present(self, locator_type, locator_value, desired_text):
         wait = WebDriverWait(self.wd, 10)
         wait.until(EC.text_to_be_present_in_element((self.types[locator_type], locator_value), desired_text))
+
+    def fill_input(self, locator_type, locator_value, data_value):
+        self.click_element(self.types[locator_type], locator_value)
+        self.wd.find_element(self.types[locator_type], locator_value).clear()
+        self.wd.find_element(self.types[locator_type], locator_value).send_keys(data_value)

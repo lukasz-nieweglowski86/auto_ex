@@ -12,7 +12,6 @@ def test_switch_between_homepage_to_casino_page():
     pb.wait_for_text_to_be_present(pb.types['xpath'], '//h1[text()="New games"]', 'New games')
     assert pb.wd.current_url == casino_locators.page_url  # Assertion 1
     assert pb.wd.find_element(pb.types['xpath'], '//h1[text()="New games"]').is_displayed()  # Assertion 2
-    pb.wd.quit()
 
 
 def test_switch_between_casino_page_to_homepage():
