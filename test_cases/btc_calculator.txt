@@ -120,7 +120,7 @@ ASSERTIONS:
 1. Check if USD value is calculated correctly.
 
 =========================================================================================
-
+*
 Test: test_change_btc_value_step_up
 
 PRECONDITIONS:
@@ -136,7 +136,7 @@ ASSERTIONS:
 2. Check if USD value is calculated correctly.
 
 =========================================================================================
-
+*
 Test: test_change_btc_value_step_down
 
 PRECONDITIONS:
@@ -152,7 +152,7 @@ ASSERTIONS:
 2. Check if USD value is calculated correctly.
 
 =========================================================================================
-
+*
 Test: test_change_btc_value_step_down_below_0
 
 PRECONDITIONS:
@@ -210,7 +210,7 @@ STEPS:
 1. Enter USD value. -> BTC value is not calculated.
 
 ASSERTIONS:
-1. Check if USD value is equal to 64639.
+1. Check if USD value is equal to 'NaN'.
 2. Check if BTC value is equal to 1.
 
 =========================================================================================
@@ -226,7 +226,7 @@ STEPS:
 1. Enter USD value. -> BTC value is not calculated.
 
 ASSERTIONS:
-1. Check if USD value is equal to 64639.
+1. Check if USD value is equal to 'NaN'.
 2. Check if BTC value is equal to 1.
 
 =========================================================================================
@@ -242,7 +242,7 @@ STEPS:
 1. Clear USD value input. -> BTC value is not calculated.
 
 ASSERTIONS:
-1. Check if USD value is equal to 64639.
+1. Check if USD value is equal to 'NaN'.
 2. Check if BTC value is equal to 1.
 
 =========================================================================================
@@ -291,7 +291,7 @@ ASSERTIONS:
 1. Check if BTC value is calculated correctly.
 
 =========================================================================================
-
+*
 Test: test_change_usd_value_step_up
 
 PRECONDITIONS:
@@ -307,7 +307,7 @@ ASSERTIONS:
 2. Check if BTC value is calculated correctly.
 
 =========================================================================================
-
+*
 Test: test_change_usd_value_step_down
 
 PRECONDITIONS:
@@ -323,7 +323,7 @@ ASSERTIONS:
 2. Check if BTC value is calculated correctly.
 
 =========================================================================================
-
+*
 Test: test_change_usd_value_step_down_below_0
 
 PRECONDITIONS:
